@@ -20,4 +20,6 @@ app.listen(3000, async ()=>{
     await connect();
     console.log("mongodb connected successfully");
     console.log('server strted successfully');
+    // let user = await User.create({email:"abc@xyz.com",password:"678hjg",username:"abc"});
+    // console.log(user);
 })
