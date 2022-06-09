@@ -29,7 +29,7 @@ async (email,password,done)=>{
      if(!user){
          return done(null,false,{message:"User not found"});
      }
-     const validate = await user.isValidPassword(passwod);
+     const validate = await user.isValidPassword(password);
      if(!validate){
          return done(null,false,{message:"wrong password"});
      }

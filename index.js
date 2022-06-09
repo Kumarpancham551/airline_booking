@@ -12,14 +12,15 @@ const apiRouter = require("./src/routes/index");
 
 app.use("/",authRouter);
 app.use("/api",passport.authenticate('jwt',{session:false}),apiRouter);
-app.use(function(err,req,res,next){
-    res.status(err.status || 500);
-    res.json({
-        success: false,
-        error:err
-    });
+
+// app.use(function(err,req,res,next){
+//     res.status(err.status || 500);
+//     res.json({
+//         success: false,
+//         error:err
+//     });
     
-})
+// })
 
 app.listen(3000, async ()=>{
     
