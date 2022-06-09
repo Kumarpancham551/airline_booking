@@ -8,7 +8,7 @@ passport.use('signup',new localStrategy({
     usernameField:'email',
     passwordField:'password'
 },
-async(email,password,done)=>{
+async (email,password,done)=>{
 try{
     const user = await User.create({email,password});
     return done(null,user);
@@ -53,4 +53,4 @@ passport.use(new JWTStrategy(
             done(err);
         }
     }
-))
+));
