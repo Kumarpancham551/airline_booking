@@ -42,7 +42,6 @@ const getAllAirline =async ()=>{
 
 module.exports={
     createAirline,
-    updateAirline,
     destroyAirline,
     getAirline,
     getAllAirline
