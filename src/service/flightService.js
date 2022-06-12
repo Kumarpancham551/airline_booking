@@ -8,13 +8,10 @@ const createFlight = async (data)=>{
     departureAirport:data.departureAirport,
     arivalAirport:data.arivalAirport,
     duration:data.duration,
-    airline:data.airline,
-    flightDate:data.flightDate,
     departueTime:data.departueTime,
     arrivalTime:data.arrivalTime,
     flightNumber:data.flightNumber,
     price:data.price,
-    boardingGate:data.boardingGate,
     airline:data.airlineId
   }
   const response =await new Flight(newFlight).save();
