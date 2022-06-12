@@ -1,4 +1,4 @@
-const mongoose = required('mongoose');
+const mongoose = require('mongoose');
 
 const bookingSchema = new mongoose.Schema({
     id:{
@@ -20,7 +20,7 @@ const bookingSchema = new mongoose.Schema({
         type:String,
         required:true,
         default:"In process",
-        enum:["booked","cancelled","in progress"]
+        enum:["booked","cancelled","in process"]
     }
 },{timestamps:true});
 
